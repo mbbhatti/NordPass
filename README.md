@@ -73,7 +73,12 @@ make tests
             * Content: ```[]```
         * Error
             * Code: 400
-            * Content: ```{ "error": "No id parameter"} and { "error": "No data parameter"}```    
+            * Content: 
+            ```
+            - { "error": "No id parameter"} 
+            - { "error": "No item found"}
+            - { "error": "No data parameter"}            
+            ``` 
     * Description: Update item by id and return empty json response. 
 * item/{id}
     * Method: DELETE
@@ -85,7 +90,11 @@ make tests
             * Content: ```[]```
         * Error
             * Code: 400
-            * Content: ```{ "error": "No id parameter"} and { "error": "No item parameter"}```    
+            * Content: 
+            ```
+            - { "error": "No id parameter"} 
+            - { "error": "No item parameter"}
+            ```    
     * Description: Delete item by id and return empty json response.
     
 * Change: 
